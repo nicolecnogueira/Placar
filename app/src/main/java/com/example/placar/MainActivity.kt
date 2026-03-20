@@ -5,11 +5,6 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -23,6 +18,9 @@ class MainActivity : ComponentActivity() {
     private lateinit var pTimeA: TextView
     private lateinit var pTimeB: TextView
 
+    private var ultimaJogada: Pair<Int, String>? = null
+    private lateinit var txtHistorico: TextView
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +29,8 @@ class MainActivity : ComponentActivity() {
         pTimeA = findViewById(R.id.placarTimeA)
         pTimeB = findViewById(R.id.placarTimeB)
 
+        txtHistorico = findViewById(R.id.txtHistorico)
+
         val bTresPontosTimeA: Button = findViewById(R.id.tresPontosA)
         val bDoisPontosTimeA: Button = findViewById(R.id.doisPontosA)
         val bTLivreTimeA: Button = findViewById(R.id.tiroLivreA)
@@ -38,7 +38,9 @@ class MainActivity : ComponentActivity() {
         val bDoisPontosTimeB: Button = findViewById(R.id.doisPontosB)
         val bTLivreTimeB: Button = findViewById(R.id.tiroLivreB)
         val bReiniciar: Button = findViewById(R.id.reiniciarPartida)
+        val bDesfazer: Button = findViewById(R.id.btnDesfazer)
 
+        bDesfazer.setOnClickListener { desfazer() }
 
         bTresPontosTimeA.setOnClickListener { adicionarPontos(3, "A") }
 
@@ -66,6 +68,10 @@ class MainActivity : ComponentActivity() {
 
         }
         atualizaPlacar(time)
+
+        ultimaJogada = Pair(pontos, time)
+
+        txtHistorico.text = "Última jogada: Time $time +$pontos"
     }
 
     fun atualizaPlacar(time: String){
@@ -73,6 +79,15 @@ class MainActivity : ComponentActivity() {
             pTimeA.setText(pontuacaoTimeA.toString())
         }else {
             pTimeB.setText(pontuacaoTimeB.toString())
+        }
+    }
+
+    fun desfazer() {
+        ultimaJogada?.let { (pontos, time) ->
+            if(time == "A") pontuacaoTimeA -= pontos else pontuacaoTimeB -= pontos
+            atualizaPlacar(time)
+            txtHistorico.text = "Jogada desfeita!"
+            ultimaJogada = null // Limpa para não desfazer a mesma jogada duas vezes
         }
     }
 

@@ -16,13 +16,14 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <TextView
+            <EditText
                 android:id="@+id/timeA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="16dp"
-                android:text="Time A"
+                android:text=""
+                android:hint="Time A"
                 android:textSize="14sp"
                 android:fontFamily="sans-serif"/>
 
@@ -70,13 +71,14 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <TextView
+            <EditText
                 android:id="@+id/timeB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="16dp"
-                android:text="Time B"
+                android:text=""
+                android:hint="Time B"
                 android:textSize="14sp"
                 android:fontFamily="sans-serif"/>
 
@@ -113,6 +115,23 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtHistorico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnDesfazer"
+        android:gravity="center"
+        android:text=""
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnDesfazer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/reiniciarPartida"
+        android:layout_centerHorizontal="true"
+        android:text="Desfazer Jogada" />
 
     <Button
         android:id="@+id/reiniciarPartida"
