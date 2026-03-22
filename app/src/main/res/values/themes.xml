@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.Placar" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.Placar" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Brand colors -->
+        <item name="colorPrimary">@color/basket_orange</item>
+        <item name="colorOnPrimary">@color/basket_on_orange</item>
+        <item name="colorSecondary">@color/basket_gold</item>
+        <item name="colorOnSecondary">@color/basket_on_gold</item>
+
+        <!-- Surfaces -->
+        <item name="android:colorBackground">@color/basket_bg</item>
+        <item name="colorSurface">@color/basket_surface</item>
+        <item name="colorOnSurface">@color/basket_on_surface</item>
+
+        <!-- Style defaults -->
+        <item name="android:statusBarColor">@color/basket_bg</item>
+        <item name="android:navigationBarColor">@color/basket_bg</item>
+    </style>
 </resources>
