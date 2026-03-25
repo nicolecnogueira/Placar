@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:background="@color/basket_surface"
-            android:padding="16dp">
+            android:padding="36dp">
 
             <TextView
                 android:id="@+id/txtPeriodo"
@@ -39,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:paddingTop="6dp"
-                android:paddingBottom="12dp"
+                android:paddingBottom="10dp"
                 android:text="12:00"
                 android:textColor="@color/basket_on_surface"
                 android:fontFamily="monospace"
