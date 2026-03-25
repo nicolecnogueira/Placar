@@ -1,18 +1,27 @@
 <resources>
-    <string name="app_name">Placar</string>
+    <string name="app_name">Placar de Basquete</string>
 
+    <string name="timer_period_label">Período %1$d/%2$d</string>
     <string name="timer_start">Iniciar</string>
     <string name="timer_pause">Pausar</string>
     <string name="timer_reset">Reset tempo</string>
     <string name="timer_next">Próximo</string>
-    <string name="timer_apply_config">Aplicar configuração</string>
-    <string name="timer_period_label">Período %1$d/%2$d</string>
+    <string name="timer_apply_config">Aplicar Configuração</string>
     <string name="timer_config_applied">Configuração aplicada: %1$d períodos de %2$dmin</string>
     <string name="timer_pause_to_change">Pause o cronômetro para alterar a configuração</string>
     <string name="timer_invalid_config">Configuração inválida</string>
     <string name="timer_game_end">Fim do jogo!</string>
     <string name="timer_period_end">Período encerrado</string>
-
-    <string name="history_last_play">Última jogada: Time %1$s +%2$d</string>
     <string name="history_undo">Jogada desfeita!</string>
+
+
+    <string name="hint_time_a">Time A</string>
+    <string name="hint_time_b">Time B</string>
+
+    <string name="undo">Desfazer</string>
+    <string name="reset_game">Reiniciar Partida</string>
+    <string name="msg_reset_done">Placar reiniciado</string>
+    <string name="history_waiting">Aguardando jogada...</string>
+    <string name="history_last_play">Última: %1$s %2$s</string>
+    <string name="history_undone">Jogada desfeita!</string>
 </resources>

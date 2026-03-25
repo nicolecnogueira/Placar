@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Basketball Scoreboard</string>
+
+    <string name="timer_period_label">Period %1$d/%2$d</string>
+    <string name="timer_start">Start</string>
+    <string name="timer_pause">Pause</string>
+    <string name="timer_reset">Reset timer</string>
+    <string name="timer_next">Next</string>
+    <string name="timer_apply_config">Apply Settings</string>
+    <string name="timer_config_applied">Settings applied: %1$d periods of %2$dmin</string>
+    <string name="timer_pause_to_change">Pause the timer to change settings</string>
+    <string name="timer_invalid_config">Invalid configuration</string>
+    <string name="timer_game_end">Game over!</string>
+    <string name="timer_period_end">Period ended</string>
+    <string name="history_undo">Play undone!</string>
+
+    <string name="hint_time_a">Team A</string>
+    <string name="hint_time_b">Team B</string>
+
+    <string name="undo">Undo</string>
+    <string name="reset_game">Reset Game</string>
+    <string name="msg_reset_done">Scoreboard reset</string>
+    <string name="history_waiting">Waiting for play...</string>
+    <string name="history_last_play">Last: %1$s %2$s</string>
+    <string name="history_undone">Play undone!</string>
+</resources>

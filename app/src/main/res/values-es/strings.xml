@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Marcador de Baloncesto</string>
+
+    <string name="timer_period_label">Periodo %1$d/%2$d</string>
+    <string name="timer_start">Iniciar</string>
+    <string name="timer_pause">Pausar</string>
+    <string name="timer_reset">Reiniciar tiempo</string>
+    <string name="timer_next">Siguiente</string>
+    <string name="timer_apply_config">Aplicar Ajustes</string>
+    <string name="timer_config_applied">Configuración aplicada: %1$d periodos de %2$dmin</string>
+    <string name="timer_pause_to_change">Pausa el cronómetro para cambiar los ajustes</string>
+    <string name="timer_invalid_config">Configuración inválida</string>
+    <string name="timer_game_end">¡Fin del juego!</string>
+    <string name="timer_period_end">Periodo finalizado</string>
+    <string name="history_undo">¡Jugada deshecha!</string>
+
+    <string name="hint_time_a">Equipo A</string>
+    <string name="hint_time_b">Equipo B</string>
+
+    <string name="undo">Deshacer</string>
+    <string name="reset_game">Reiniciar Partida</string>
+    <string name="msg_reset_done">Marcador reiniciado</string>
+    <string name="history_waiting">Esperando jugada...</string>
+    <string name="history_last_play">Última: %1$s %2$s</string>
+    <string name="history_undone">¡Jugada deshecha!</string>
+</resources>
